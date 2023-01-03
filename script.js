@@ -65,7 +65,7 @@ function showWeather({
             </div>
         <div class="weather__main-info">
             <div class="icon">
-                <img src="http://openweathermap.org/img/w/${icon}.png" alt="Icon">
+                <img src="https://openweathermap.org/img/w/${icon}.png" alt="Icon">
             </div>
             <p class="temp">${Math.floor(temp)}</p>
         </div>
