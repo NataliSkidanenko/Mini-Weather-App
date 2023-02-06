@@ -1,8 +1,8 @@
 const API_KEY = '4840b8714bd235f13ad4fc7da0d61773';
 
 startWeatherApp();
-const showWeatherbutton = document.querySelector('#weather-button');
-showWeatherbutton.addEventListener('click', getCityWeather);
+const searchCityForm = document.querySelector('#weather-form');
+searchCityForm.addEventListener('submit', getCityWeather);
 
 function startWeatherApp() {
     showLoader();
@@ -49,6 +49,7 @@ async function getCityWeather(e) {
             getRandomWeather();
         }
     }
+    e.target.reset();
 }
 
 function showWeather({
